@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    background: #f5f7fa;
+}
+
+/* 封面 */
+.cover {
+    height: 100vh;
+    background: url("/static/images/cover.jpg") no-repeat center;
+    background-size: cover;
+}
+/* 自我介绍 */
+.about {
+    padding: 80px;
+    text-align: center;
+}
+
+/* 分类 */
+.menu {
+    padding: 80px;
+    text-align: center;
+}
+
+/* 网格 */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* 防止屏幕小挤在一起 */
+}
+
+/* 每个分类卡片 */
+.item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* 卡片 */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+/* 内容区 */
+.content {
+    padding: 80px;
+    text-align: center;
+}
+
+/* 默认隐藏 */
+.content-box {
+    display: none;
+    margin-top: 40px;
+}
+
+/* 图片 */
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* 视频 */
+video {
+    width: 400px;
+}
