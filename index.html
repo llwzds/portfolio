@@ -8,13 +8,11 @@
 
 <body>
 
-<!-- 封面 -->
 <section class="cover">
     <h1>我的作品集</h1>
     <p>向下探索</p>
 </section>
 
-<!-- 自我介绍 -->
 <section class="about">
     <h2>关于我</h2>
     <div class="card">
@@ -22,7 +20,6 @@
     </div>
 </section>
 
-<!-- 分类入口 -->
 <section class="menu">
     <h2>我的作品</h2>
 
@@ -34,18 +31,17 @@
     </div>
 </section>
 
-<!-- 👇 关键：内容展示区 -->
 <section class="content" id="content">
 
     <div id="photo" class="content-box">
         <h2>摄影作品</h2>
-        <img src="{{ url_for('static', filename='images/photo1.jpg') }}">
+        <img src="static/images/photo1.jpg">
     </div>
 
     <div id="video" class="content-box">
         <h2>视频作品</h2>
         <video controls>
-            <source src="{{ url_for('static', filename='videos/video1.mp4') }}">
+            <source src="static/videos/video1.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -63,7 +59,6 @@
 
 <script>
 function showContent(id) {
-
     // 全部隐藏
     let all = document.querySelectorAll(".content-box");
     all.forEach(el => el.style.display = "none");
@@ -71,7 +66,7 @@ function showContent(id) {
     // 显示当前
     document.getElementById(id).style.display = "block";
 
-    // 自动滚动到内容区（高级感🔥）
+    // 自动滚动到内容区
     document.getElementById("content").scrollIntoView({
         behavior: "smooth"
     });
